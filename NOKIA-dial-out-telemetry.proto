@@ -1,0 +1,8 @@
+syntax = "proto3";
+import "github.com/openconfig/gnmi/proto/gnmi/gnmi.proto";
+package Nokia.SROS;
+
+service DialoutTelemetry {
+  rpc Publish(stream gnmi.SubscribeResponse) returns (stream PublishResponse);
+}
+message PublishResponse {}
