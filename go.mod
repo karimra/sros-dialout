@@ -1,4 +1,4 @@
-module github.com/karimra/nokiasros
+module github.com/karimra/sros-dialout
 
 go 1.14
 
